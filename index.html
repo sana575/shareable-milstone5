@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume Builder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>
+            Shareable Resume Builder <br> <span>By Sana Ishaq</span>
+        </h1>
+    </header>
+
+    <div class="form-container">
+        <form id="resumeForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required placeholder="Your Username">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your Full Name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email Address">
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Your Phone Number">
+
+                <label for="imageInput">Upload Profile Image:</label>
+                <input type="file" id="imageInput" name="image" accept="image/*" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Education</legend>
+                <label for="education">Education</label>
+                <textarea id="education" name="education" rows="4" placeholder="Enter your education details" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Experience</legend>
+                <label for="experience">Experience</label>
+                <textarea id="experience" name="experience" rows="4" placeholder="Enter your experience details" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Skills</legend>
+                <label for="skills">Skills</label>
+                <textarea id="skills" name="skills" rows="4" placeholder="Enter your skills" required></textarea>
+            </fieldset>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+    </div>
+
+    <div id="resumeOutput"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
